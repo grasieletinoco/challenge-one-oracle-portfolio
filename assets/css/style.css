@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+
+    --branco: #ffffff;
+    --cinza_escuro1: #171717;
+    --cinza_escuro2: #313533;
+    --cinza_escuro3: #565d59;
+    --cinza_claro1: #cacecc;
+    --cinza_claro2:#e4e6e5;
+    --cinza_claro3: #f9f9f9;
+    --roxo_escuro1: #362e6b;
+    --roxo_escuro2: #5a4db3;
+    --roxo_claro1: #7b70c2;
+    --roxo_claro2: #ada6d8;
+    --roxo_claro3: #bdb8e0;
+    --roxo_claro4: #e0dcef;
+    --roxo_claro5: #dfddf4;
+    --roxo_claro6: #f1f0ff;
+    --rosa_escuro1: #c81e54;
+    --rosa_escuro2: #e34274;
+    --rosa_claro1: #f3aec3;
+    --rosa_claro2: #cec0cf;
+}
+
+
+.content{
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 2rem 0;
+}
+
+
+.titulo{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Bruno Ace SC", sans-serif;
+    color: var(--rosa_escuro2);
+    padding-bottom: 1rem;
+}
+
+
+.headline, .menu, .skills, .hobbies, .projetos{
+    background-color: var(--cinza_claro2);
+}
+
+
+.about, .cursos, .contato{
+    background-color: var(--rosa_claro2);
+    border-top: 1px groove var(--rosa_claro2);
+    border-bottom: 1px groove var(--rosa_claro2);
+}
+
+
+
+.menu__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.menu__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    font-size: .8rem;
+}
+
+.menu__titulo h1{
+    font-family: "Rochester", cursive;
+    color: var(--cinza_escuro2);
+}
+
+.menu__lista ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu__lista ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--roxo_escuro2);
+}
+
+.menu__lista ul li a:hover{
+    color: var(--roxo_claro1);
+    text-decoration: var(--rosa_claro1) underline 5px;
+
+}
+
+#menu-icon{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--rosa_escuro1);
+    display: none;
+}
+
+.headline__content{
+    display: flex;
+    margin: 0 1rem;
+}
+
+.headline__content__texto {
+    padding: 20px;
+}
+
+.headline__content__texto h2{
+    font-family: "Rochester", cursive;
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: var(--cinza_escuro2);
+    padding: 40px 0;
+}
+
+.headline__content__texto span{
+    font-family: "Rochester", cursive;
+    color: var(--rosa_escuro1);
+}
+
+.headline__content__texto p{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.headline__content__media ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.headline__content__media ul li a{
+    text-decoration: none;
+    color: var(--roxo_escuro1);
+    cursor: pointer;
+}
+
+.headline__content__media ul li a:hover{
+    color: var(--rosa_escuro1);
+}
+
+.headline__content__imagem img{
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: var(--cinza_escuro3) 0px 5px 15px;
+}
+
+
+
+/* ABOUT ME */
+.about__content{
+    padding: 3.5rem 1rem;
+    margin: 0 1rem;
+}
+
+.about__content p{
+    text-align: justify;
+}
+
+.about__content h2{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Bruno Ace SC", sans-serif;
+    color: var(--rosa_escuro2);
+}
+
+.about__content p{
+    padding: 10px 0;
+}
+
+
+
+/* SKILLS - HOBBIES */
+.skills__content, .hobbies__content{
+    padding: 3.5rem 1rem;
+}
+
+.skills_content__box, .hobbies__box__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+    padding-top: 20px;
+}
+
+.skills__box ul, .hobbies__box ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    background-color: var(--branco);
+    color: var(--roxo_escuro2);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px var(--roxo_claro3);
+}
+
+.skills__box ul:hover, .hobbies__box ul:hover{
+    box-shadow: 2px 2px 2px 1px var(--rosa_claro1);
+}
+
+.skills__img img, .hobbies__img img{
+    width: 40px;
+}
+
+.skills__name, .hobbies__name{
+    font-weight: 600;
+}
+
+
+
+/* CURSOS */
+.cursos__content{
+    padding: 3.5rem 1rem;
+}
+
+.cursos__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding-top: 20px;
+}
+
+.cursos__box__imagem{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    background-color: var(--cinza_claro2);
+    box-shadow: var(--roxo_claro1) 0px 0px 5px 0px, var(--roxo_claro1) 0px 0px 1px 0px;
+    border-radius: 8px;
+}
+
+.cursos__box__imagem:hover{
+    box-shadow: var(--rosa_escuro2) 0px 0px 5px 0px, var(--rosa_escuro2) 0px 0px 1px 0px;
+}
+
+.cursos__box__descricao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    font-size: 1rem;
+    color: var(--cinza_escuro2);
+    padding-top: 10px;
+}
+
+
+
+/* PROJETOS  */
+.projetos__content{
+    padding: 3.5rem 1rem;
+}
+
+.projetos__box__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.projetos__box{
+    text-align: center;
+    padding: 20px 40px;
+    background-color: var(--cinza_claro3);
+    box-shadow: var(--rosa_claro1) 0px 0px 5px 0px, var(--rosa_claro1) 0px 0px 1px 0px;
+    border-radius: 5px;
+}
+
+.projetos__box__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    padding-top: 10px;
+    color: var(--cinza_escuro2);
+}
+
+.projetos__box img{
+    box-shadow: var(--roxo_claro3) 0px 1px 3px 0px, var(--roxo_claro3) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+
+.projetos__box__texto button{
+    cursor: pointer;
+}
+
+.projetos__box__texto button a{
+  color: var(--roxo_escuro2);
+  font-weight: 600;
+}
+
+.projetos__box__texto button a:hover{
+    color: var(--rosa_escuro2);
+  }
+
+.projetos__box__texto button:hover{
+    cursor: pointer;
+    background-color: var(--roxo_claro6);
+}
+
+.btn__projetos{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--roxo_claro5);
+}
+
+.btn__repositorio a{
+    border-radius: 5px;
+    padding: 7px 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--branco);
+}
+
+.btn__demo a{
+    border-radius: 5px;
+    padding: 7px 27px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--branco);
+}
+
+
+
+/* FORMULARIO  */
+.contato__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 3.5rem 1rem;
+}
+
+.contato-img{
+    width: 350px;
+    
+}
+
+.formulario{
+    width: 450px;
+    box-shadow: var(--cinza_escuro3) 0px 2px 4px, var(--cinza_escuro3) 0px 7px 13px -3px, var(--cinza_escuro3) 0px -3px 0px inset;
+    border-radius: 5px;
+}
+
+.formulario__texto{
+    text-align: center;
+    color: var(--cinza_escuro3);
+}
+
+.formulario__texto h3{
+    font-size: 2rem;
+}
+
+.formulario__texto p{
+    padding: 10px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.formulario__campo form {
+    background-color: var(--cinza_claro3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--cinza_claro1);
+}
+
+.formulario__campo label {
+    margin-bottom: 5px;
+}
+
+.formulario__campo input[type="text"],
+.formulario__campo input[type="email"],
+.formulario__campo textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--cinza_claro1);
+    border-radius: 5px;
+}
+
+.formulario__campo textarea {
+    resize: vertical;
+}
+
+.formulario__campo button {
+    width: 100%;
+    background-color:var(--roxo_escuro2);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.formulario__campo button:hover {
+    background-color: var(--roxo_claro3);
+    color:var(--roxo_escuro2);
+    box-shadow: var(--roxo_claro1) 0px 0.0625em 0.0625em, var(--roxo_claro1) 0px 0.125em 0.5em, var(--roxo_claro1) 0px 0px 0px 1px inset;
+}
+
+
+
+/* FOOTER */
+.rodape{
+    background-color: var(--cinza_escuro1);
+}
+
+.rodape__box__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--roxo_claro3);
+    font-size: .8rem;
+}
+
+.rodape__box__texto p{
+    padding: 0.2rem 0;
+    text-align: center;
+}
+
+.rodape__box__media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+.rodape__box__media a{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid var(--roxo_escuro2);
+    color: var(--branco);
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.rodape__box__media a:hover{
+    border: 2px solid var(--rosa_escuro1);
+}
+
+
+@media (max-width: 768px){
+    
+    .headline__content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu__lista{
+        display: none;
+    }
+
+    .show-menu {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu__lista ul{
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 12px;
+    }
+
+
+    .menu__lista ul li:hover{
+        text-decoration: var(--rosa_claro1) underline 5px;
+    }
+
+    .formulario__texto img{
+        display: none;
+    }
+
+    .formulario{
+        width: 100%;   
+    }
+
+}
+
+
+@media (max-width: 391px){
+
+    .headline__content__texto h2{
+        font-size: 3rem;
+    }
+
+    .headline__content__imagem img{
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 376px){
+
+    .headline__content__texto h2{
+        font-size: 1.7rem;
+    }
+
+    .headline__content__imagem img{
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 320px){
+
+    .headline__content__texto h2{
+        font-size: 1.4rem;
+    }
+
+    .headline__content__imagem img{
+        width: 300px;
+    }
+}
